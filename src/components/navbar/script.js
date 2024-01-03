@@ -1,8 +1,8 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const navToggle = document.getElementById('navToggle');
-    const navLinks = document.getElementById('navLinks');
+document.addEventListener('DOMContentLoaded', function () {
+    var mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+    var navbarControls = document.querySelector('.navbar-controls');
 
-    navToggle.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
+    mobileNavToggle.addEventListener('click', function () {
+        navbarControls.style.display = navbarControls.style.display === 'flex' ? 'none' : 'flex';
     });
 });

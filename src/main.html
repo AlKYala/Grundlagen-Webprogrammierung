@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Page</title>
-    <link rel="stylesheet" href="components/navbar/styles.css">
+    <link rel="stylesheet" href="mainStyles.css">
+    <link rel="stylesheet" href="components/navbar/firstRow/styles.css">
+    <link rel="stylesheet" href="components/navbar/alphabetRow/styles.css">
 </head>
 <body>
     <!-- NAVBAR -->
-    <object type="text/html" data="components/navbar/index.html" style="width: 100%; height: 50px;"></object>
-    
+    <object type="text/html" data="components/navbar/firstRow/index.html" class="navbar-component"></object>
+    <object type="text/html" data="components/navbar/alphabetRow/index.html" class="navbar-component"></object>
     <!-- Your main.html content goes here -->
     
-    <script src="components/navbar/script.js"></script>
+    <script src="components/navbar/firstRow/script.js"></script>
 </body>
 </html>

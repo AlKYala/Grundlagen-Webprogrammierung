@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+.navbar {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.brand-name {
+    font-weight: bold;
+    color: black;
+}
+
+.navbar-controls {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-blue {
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.mobile-nav-toggle {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Hide by default, visible only in mobile view */
+}
+
+@media (max-width: 768px) {
+    .navbar-controls {
+        display: none; /* Hide the search bar and button in mobile view */
+    }
+
+    .mobile-nav-toggle {
+        display: block; /* Show the menu toggle button in mobile view */
+    }
+}

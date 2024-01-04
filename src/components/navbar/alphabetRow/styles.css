@@ -1,28 +1,28 @@
 body {
     overflow: hidden;
     margin: 0;
-    font-family: 'Roboto', sans-serif; /* Assuming Roboto is used for the logo */
+    font-family: 'Roboto', sans-serif;
 }
 
 .alphabet-nav {
     display: flex;
     justify-content: center;
-    background-color: #e0e0e0; /* Slightly darker grey for contrast */
+    background-color: #e0e0e0;
     padding: 5px 0;
-    flex-wrap: wrap; /* Wrap alphabet for smaller screens */
-    margin: 0; /* Reset margin */
+    flex-wrap: wrap;
+    margin: 0;
 }
 
 .alphabet-nav a {
     padding: 5px 10px;
-    color: black; /* Ensure this matches the logo color */
+    color: black;
     text-decoration: none;
-    margin: 0 2px; /* Spacing between alphabet letters */
-    font-size: 16px; /* Adjust to match the logo font size */
-    font-weight: bold; /* If the logo is bold */
+    margin: 0 2px;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .alphabet-nav a:hover {
     text-decoration: underline;
-    background-color: #d0d0e0; /* Light background on hover for visual feedback */
+    background-color: #d0d0e0;
 }

@@ -44,15 +44,15 @@ body {
     border: none;
     font-size: 24px;
     cursor: pointer;
-    display: none; /* Hide by default, visible only in mobile view */
+    display: none;
 }
 
 @media (max-width: 768px) {
     .navbar-controls {
-        display: none; /* Hide the search bar and button in mobile view */
+        display: none;
     }
 
     .mobile-nav-toggle {
-        display: block; /* Show the menu toggle button in mobile view */
+        display: block;
     }
 }

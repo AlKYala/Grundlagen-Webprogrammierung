@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0; /* Assuming a light grey background */
+}
+
+.glossary-container {
+    max-width: 1200px; /* Or the max-width you desire */
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+    background: #fff; /* White background for the content */
+}
+
+h1 {
+    color: #333; /* Dark grey color for the title */
+    text-align: center;
+}
+
+.alphabet-links {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.alphabet-links a {
+    margin: 0 5px; /* Space out the alphabet links */
+    color: #333; /* Dark grey color for the alphabet links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.alphabet-links a:hover {
+    text-decoration: underline;
+}
+
+.terms-section h2 {
+    color: #333; /* Dark grey color for the term section titles */
+    padding-left: 20px;
+}
+
+.term {
+    background: #fff; /* White background for the term box */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Box-shadow for the term box */
+    margin: 10px;
+    padding: 20px;
+    position: relative;
+}
+
+.term .details {
+    display: block;
+    color: #666; /* Lighter grey color for details */
+    font-size: 0.9em;
+    margin-top: 5px;
+}

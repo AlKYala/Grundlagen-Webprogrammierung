@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UX Glossary</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="../../../../bootstrap/bootstrap.min.css">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../../../../bootstrap/bootstrap.min.js" ></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="../../../../bootstrap/jquery-3.5.1.slim.min.js"></script>
+
+    <script src="../../../../bootstrap/popper.min.js"></script>
+
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <!-- Glossary Section -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12">
+                <input type="text" id="searchInput" onkeyup="filterTerms()" placeholder="Suche nach Begriffen..." class="form-control mb-4">
+                <div id="glossaryTerms" class="glossary">
+                    <!-- Glossary entries -->
+                    <div class="term">A/B Testing <span class="details">Quantitative Research</span></div>
+                    <div class="term">Accessibility <span class="details">Visual Design</span></div>
+                    <!-- More entries here -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

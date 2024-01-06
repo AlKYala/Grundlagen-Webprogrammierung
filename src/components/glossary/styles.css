@@ -1,28 +1,21 @@
-/* Glossary Container */
+/* Glossary Container Styling */
 .glossary-container {
-    background: #f5f5f5; /* Light grey background for the glossary container */
     padding: 20px;
 }
 
-/* Letter Section Styling */
-.letter-section {
-    background: #ffffff; /* White background for each letter section */
-    border-radius: 10px;
-    margin-bottom: 30px; /* Space between each letter section */
-    padding: 15px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
-}
-
-.letter-title {
-    font-size: 24px; /* Larger font size for letter titles */
+/* Letter Marker Styling */
+.letter-marker {
+    font-size: 36px; /* Large font size for letter markers */
     font-weight: bold;
-    color: #333; /* Dark grey color for the letter */
-    margin-bottom: 20px; /* Space between the letter title and terms */
+    color: #1976d2; /* Blue color for the letter markers */
+    padding: 10px 0;
+    margin-top: 20px; /* Space above the letter marker */
+    margin-bottom: 10px; /* Space below the letter marker */
 }
 
-/* Glossary Section Styling */
-.glossary .term {
-    background: #ffffff; /* Brighter white background for cards */
+/* Term Styling */
+.term {
+    background: #ffffff; /* Brighter white background for terms */
     border: 2px solid #1976d2; /* Blue border */
     border-radius: 10px; /* Smooth border radius */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Enhanced box shadow for more depth */
@@ -32,13 +25,13 @@
     cursor: pointer;
 }
 
-.glossary .term:hover {
-    background-color: #f8f8f8; /* Slightly off-white background on hover for subtle effect */
+.term:hover {
+    background-color: #e0f7fa; /* Light blue background on hover */
     transform: scale(1.02); /* Enlarge by 2% */
     border-color: #90caf9; /* Lighter blue border on hover */
 }
 
-.glossary .details {
+.details {
     color: #666;
     font-size: 0.9em;
     display: block;

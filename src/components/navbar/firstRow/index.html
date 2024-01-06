@@ -7,6 +7,7 @@
     <title>Log7 Glossar</title>
         <!--bootstrap-->
         <link rel="stylesheet" href="../../../../bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css">
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="../../../../bootstrap/bootstrap.min.js" ></script>
@@ -15,20 +16,30 @@
         <script src="../../../../bootstrap/jquery-3.5.1.slim.min.js"></script>
 
         <script src="../../../../bootstrap/popper.min.js"></script>
+        <script src="script.js"></script>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Navbar Brand -->
         <a class="navbar-brand" href="#">Log7 Glossar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+        <!-- Toggler for Mobile View -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <!-- Your navbar content goes here -->
+
+        <!-- Navbar Content -->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <!-- Search Bar -->
+                <input type="text" class="form-control mr-2" placeholder="Begriff Suchen">
+                <!-- Begriff Anlegen Button -->
+                <button class="btn btn-success mr-2">Suchen</button>
+                <button class="btn btn-primary">Begriff Anlegen</button>
+            </div>
         </div>
     </nav>
-    <script src="script.js"></script>
 </body>
 
 </html>

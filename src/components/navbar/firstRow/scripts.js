@@ -6,3 +6,9 @@ document.addEventListener('DOMContentLoaded', function () {
         navbarControls.style.display = navbarControls.style.display === 'flex' ? 'none' : 'flex';
     });
 });
+
+
+function parentRedirect(e, url) {
+    e.preventDefault();  // Prevent the default anchor behavior
+    top.location.href = url;  // Change the location of the topmost parent window
+}

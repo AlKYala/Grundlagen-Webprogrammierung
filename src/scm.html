@@ -14,10 +14,33 @@
     
     <script src="scripts.js"></script>
     <script src="definition.js"></script>
+    <script src="firstRowNavbar.js"></script>
+    <link rel="stylesheet" href="firstRowStyles.css">
 </head>
 
 <body>
-    <object type="text/html" data="components/navbar/firstRow/index.html" class="navbar-component"></object>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Navbar Brand -->
+        <a class="navbar-brand" href="../../../main.html" onclick="parentRedirect(event, '../../../main.html')">Log7
+            Glossar</a>
+
+        <!-- Toggler for Mobile View -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Content -->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <!-- Search Bar -->
+                <input type="text" class="form-control mr-2" placeholder="Begriff Suchen">
+                <!-- Begriff Anlegen Button -->
+                <button class="btn btn-success mr-2">Suchen</button>
+                <button class="btn btn-primary">Begriff Anlegen</button>
+            </div>
+        </div>
+    </nav>
     <div class="container mt-5">
         <!-- Article Title -->
         <div class="row mb-2" id="introduction">

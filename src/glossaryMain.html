@@ -12,11 +12,63 @@
 
     
     <script src="scripts.js"></script>
+    <script src="firstRowNavbar.js"></script>
+    <link rel="stylesheet" href="firstRowStyles.css">
+    <link rel="stylesheet" href="alphabetRow.css">
 </head>
 <body>
     <!-- NAVBAR -->
-    <object type="text/html" data="components/navbar/firstRow/index.html" class="navbar-component"></object>
-    <object type="text/html" data="components/navbar/alphabetRow/index.html" class="navbar-component"></object>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Navbar Brand -->
+        <a class="navbar-brand" href="../../../main.html" onclick="parentRedirect(event, '../../../main.html')">Log7
+            Glossar</a>
+
+        <!-- Toggler for Mobile View -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Content -->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <!-- Search Bar -->
+                <input type="text" class="form-control mr-2" placeholder="Begriff Suchen">
+                <!-- Begriff Anlegen Button -->
+                <button class="btn btn-success mr-2">Suchen</button>
+                <button class="btn btn-primary">Begriff Anlegen</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="alphabet-nav">
+        <a href="#A">A</a>
+        <a href="#B">B</a>
+        <a href="#C">C</a>
+        <a href="#D">D</a>
+        <a href="#E">E</a>
+        <a href="#F">F</a>
+        <a href="#G">G</a>
+        <a href="#H">H</a>
+        <a href="#I">I</a>
+        <a href="#J">J</a>
+        <a href="#K">K</a>
+        <a href="#L">L</a>
+        <a href="#M">M</a>
+        <a href="#N">N</a>
+        <a href="#O">O</a>
+        <a href="#P">P</a>
+        <a href="#Q">Q</a>
+        <a href="#R">R</a>
+        <a href="#S">S</a>
+        <a href="#T">T</a>
+        <a href="#U">U</a>
+        <a href="#V">V</a>
+        <a href="#W">W</a>
+        <a href="#X">X</a>
+        <a href="#Y">Y</a>
+        <a href="#Z">Z</a>
+    </div>
     <!-- Your main.html content goes here -->
 
 
@@ -51,7 +103,9 @@
             <div class="letter-marker" id="Q">Q</div>
             <div class="letter-marker" id="R">R</div>
             <div class="letter-marker" id="S">S</div>
-                <a href="scm.html"><div class="term">Supply Chain Management <span class="details">Logistics</span></div></a>
+                <a href="scm.html">
+                    <div class="term">Supply Chain Management <span class="details">Logistics</span></div>
+                </a>
             <div class="letter-marker" id="T">T</div>
             <div class="letter-marker" id="U">U</div>
             <div class="letter-marker" id="V">V</div>

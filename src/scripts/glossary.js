@@ -37,4 +37,24 @@ function filterGlossary() {
     });
 }
 
-document.addEventListener("DOMContentLoaded", filterGlossary);
+function checkForSearchParam() {
+    var urlParams = new URLSearchParams(window.location.search);
+    var searchValue = urlParams.get('search');
+
+    if (searchValue) {
+        document.getElementById('searchInput').value = decodeURIComponent(searchValue);
+        filterTerms();
+    }
+}
+
+function resetSearch() {
+    document.getElementById('searchInput').value = '';
+    filterTerms();
+}
+
+function init() {
+    checkForSearchParam();
+    filterGlossary();
+}
+
+document.addEventListener("DOMContentLoaded", init);

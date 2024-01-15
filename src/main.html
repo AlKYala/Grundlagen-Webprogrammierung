@@ -37,10 +37,9 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
                 <!-- Search Bar -->
-                <input type="text" class="form-control mr-2" placeholder="Begriff Suchen">
+                <input id="search" type="text" class="form-control mr-2" placeholder="Begriff Suchen">
                 <!-- Begriff Anlegen Button -->
-                <button class="btn btn-success mr-2">Suchen</button>
-                <button class="btn btn-primary">Begriff Anlegen</button>
+                <button onclick="redirectToGlossary()"  class="btn btn-success mr-2">Suchen</button>
             </div>
         </div>
     </nav>
@@ -60,7 +59,7 @@
             <!-- Box 2 -->
             <div class="col-md-6">
                 <div class="landing-box" onclick="parentRedirect(event, 'main.html')">
-                    <h2>Begriff ANlegen</h2>
+                    <h2>Begriff Anlegen</h2>
                     <h4 class="subtitle">Lorem Ipsum</h4>
                     <p>This is some optional text for the second box. Provide details about another feature or service.
                     </p>

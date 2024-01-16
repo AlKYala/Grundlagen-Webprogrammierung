@@ -4,7 +4,7 @@ function updateLastModifiedDate() {
     if(!lastModified) {
         return;
     }
-    document.getElementById("lastModified").innerText = "Last Modified: " + lastModified;
+    document.getElementById("lastModified").innerText = "Definition zuletzt geaendert am: " + lastModified;
 }
 
 

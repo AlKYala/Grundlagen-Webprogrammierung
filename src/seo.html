@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Engine Optimization</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- Bootstrap Resources -->
+    <script src="../bootstrap/jquery-3.5.1.slim.min.js"></script>
+    <script src="../bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/definition.js"></script>
+    <script src="scripts/firstRowNavbar.js"></script>
+    <link rel="stylesheet" href="styles/firstRowStyles.css">
+    <link rel="stylesheet" href="styles/definition.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Navbar Brand -->
+        <a class="navbar-brand" href="#">SEO Glossar</a>
+
+        <!-- Toggler for Mobile View -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Content -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav ml-auto">
+                <!-- Search Bar -->
+                <input type="text" class="form-control mr-2" placeholder="Begriff Suchen">
+                <!-- Search Button -->
+                <button class="btn btn-success mr-2">Suchen</button>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <!-- Article Title -->
+        <div class="row mb-2" id="introduction">
+            <div class="col-md-8">
+                <h1 class="mb-3">Search Engine Optimization (SEO)</h1>
+                <h2>Einführung</h2>
+                <p>
+                    Search Engine Optimization, kurz SEO, bezieht sich auf den Prozess der Optimierung einer Website, um
+                    ihre Sichtbarkeit für relevante Suchanfragen in Suchmaschinen zu verbessern. Das Ziel von SEO ist
+                    es, die Online-Präsenz einer Website zu erhöhen, mehr Traffic zu generieren und letztendlich die
+                    Benutzererfahrung zu verbessern.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <img src="http://via.placeholder.com/300x200" alt="SEO" class="img-fluid">
+            </div>
+        </div>
+        <!-- Detailed Sections -->
+        <div id="accordion">
+            <!-- Section 1: Grundlagen von SEO -->
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            Grundlagen von SEO
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne">
+                    <div class="card-body">
+                        <p>
+                            Zu den Grundlagen von SEO gehören On-Page-Optimierung, wie die Verbesserung von Titeln,
+                            Metadaten und hochwertigen Inhalten, sowie Off-Page-Optimierung, einschließlich Backlinks
+                            und Online-Reputation. Technisches SEO konzentriert sich auf Aspekte wie
+                            Website-Geschwindigkeit und Mobilfreundlichkeit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 2: Keywords und Content-Strategie -->
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                            aria-expanded="false" aria-controls="collapseTwo">
+                            Keywords und Content-Strategie
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+                    <div class="card-body">
+                        <p>
+                            Eine effektive Content-Strategie ist entscheidend für SEO. Dies beinhaltet die Auswahl der
+                            richtigen Keywords, die Schaffung von nutzerorientierten Inhalten und die stetige
+                            Aktualisierung der Website mit relevanten und frischen Informationen.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 3: SEO Trends und Zukunft -->
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                            aria-expanded="false" aria-controls="collapseThree">
+                            SEO Trends und Zukunft
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria -labelledby="headingThree">
+                    <div class="card-body">
+                        <p>
+                            SEO entwickelt sich ständig weiter, beeinflusst durch Änderungen in den Algorithmen der
+                            Suchmaschinen, Benutzerverhalten und technologische Fortschritte. Zukünftige Trends könnten
+                            Themen wie Sprachsuche, Künstliche Intelligenz, lokale SEO und die wachsende Bedeutung von
+                            Datenschutz und Nutzererfahrung umfassen.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingFour">
+                <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+                        aria-expanded="false" aria-controls="collapseFour">
+                        Siehe auch: Verwandte Themen
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour">
+                <div class="card-body">
+                    <ul>
+                        <li><a href="#url1">Thema 1</a></li>
+                        <li><a href="#url2">Thema 2</a></li>
+                        <li><a href="#url3">Thema 3</a></li>
+                        <li><a href="#url4">Thema 4</a></li>
+                        <!-- Weitere Themen als <a> Elemente hier hinzufügen -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Placeholder for Last Modified Date -->
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <p id="lastModified" class="text-muted">
+                    <!-- Last modified date will be inserted here by JavaScript -->
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

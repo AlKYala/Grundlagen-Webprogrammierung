@@ -21,21 +21,22 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <!-- Navbar Brand -->
-        <a class="navbar-brand" href="#">SEO Glossar</a>
+        <a class="navbar-brand" href="main.html" onclick="parentRedirect(event, 'main.html')">Log7
+            Glossar</a>
 
         <!-- Toggler for Mobile View -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <!-- Navbar Content -->
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
                 <!-- Search Bar -->
-                <input type="text" class="form-control mr-2" placeholder="Begriff Suchen">
-                <!-- Search Button -->
-                <button class="btn btn-success mr-2">Suchen</button>
+                <input id="search" type="text" class="form-control mr-2" placeholder="Begriff Suchen">
+                <!-- Begriff Anlegen Button -->
+                <button onclick="redirectToGlossary()" class="btn btn-success mr-2">Suchen</button>
             </div>
         </div>
     </nav>
@@ -135,10 +136,8 @@
             <div id="collapseFour" class="collapse" aria-labelledby="headingFour">
                 <div class="card-body">
                     <ul>
-                        <li><a href="#url1">Thema 1</a></li>
-                        <li><a href="#url2">Thema 2</a></li>
-                        <li><a href="#url3">Thema 3</a></li>
-                        <li><a href="#url4">Thema 4</a></li>
+                        <li><a href="marketing.html">Marketing</a></li>
+                        <li><a href="wms.html">Warehouse Management Systeme</a></li>
                         <!-- Weitere Themen als <a> Elemente hier hinzufügen -->
                     </ul>
                 </div>

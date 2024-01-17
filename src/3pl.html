@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drittanbieter-Logistik (3PL)</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- Bootstrap Resources -->
+    <script src="../bootstrap/jquery-3.5.1.slim.min.js"></script>
+    <script src="../bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+
+
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/definition.js"></script>
+    <script src="scripts/firstRowNavbar.js"></script>
+    <link rel="stylesheet" href="styles/firstRowStyles.css">
+    <link rel="stylesheet" href="styles/definition.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Navbar Brand -->
+        <a class="navbar-brand" href="main.html" onclick="parentRedirect(event, 'main.html')">Log7
+            Glossar</a>
+
+        <!-- Toggler for Mobile View -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Content -->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <!-- Search Bar -->
+                <input id="search" type="text" class="form-control mr-2" placeholder="Begriff Suchen">
+                <!-- Begriff Anlegen Button -->
+                <button onclick="redirectToGlossary()" class="btn btn-success mr-2">Suchen</button>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <!-- Article Title -->
+        <div class="row mb-2" id="introduction">
+            <div class="col-md-8">
+                <h1 class="mb-3">Drittanbieter-Logistik (3PL)</h1>
+                
+                <p>
+                    Drittanbieter-Logistik, bekannt als Third Party Logistics (3PL), bezieht sich auf die Auslagerung
+                    logistischer Prozesse an Drittunternehmen. Diese Dienstleister übernehmen Funktionen wie Transport,
+                    Lagerung, Bestandsverwaltung und Auftragsabwicklung, wodurch Unternehmen ihre Logistik effizienter
+                    und kostengünstiger gestalten können.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <img src="images/3pl.PNG" alt="3PL" class="img-fluid">
+            </div>
+        </div>
+        <!-- Detailed Sections -->
+        <div id="accordion">
+            <!-- Section 1: Vorteile von 3PL -->
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            Vorteile von 3PL
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne">
+                    <div class="card-body">
+                        <p>
+                            Der Einsatz von 3PL-Anbietern ermöglicht es Unternehmen, sich auf ihre Kernkompetenzen zu
+                            konzentrieren und operative Logistikaufgaben effizient an Fachleute auszulagern. Dies führt
+                            oft zu Kosteneinsparungen und einer verbesserten betrieblichen Effizienz.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 2: Herausforderungen bei der Integration von 3PL -->
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                            aria-expanded="false" aria-controls="collapseTwo">
+                            Herausforderungen bei der Integration von 3PL
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+                    <div class="card-body">
+                        <p>
+                            Obwohl 3PL viele Vorteile bietet, können Herausforderungen wie die Abstimmung von
+                            Unternehmenszielen, die Kontrolle über die Logistikprozesse und die Integration in
+                            bestehende Systeme auftreten.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 3: Zukunftsperspektiven von 3PL -->
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                        aria-expanded=" false" aria-controls="collapseThree">
+                            Zukunftsperspektiven von 3PL
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
+                    <div class="card-body">
+                        <p>
+                            Die Zukunft von 3PL liegt in der weiteren Integration von Technologien wie künstlicher
+                            Intelligenz, Automatisierung und fortschrittlicher Datenanalyse. Diese Innovationen könnten
+                            zu noch effizienteren, personalisierten und flexibleren Logistiklösungen führen.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+                            aria-expanded="false" aria-controls="collapseFour">
+                            Siehe auch: Verwandte Themen
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour">
+                    <div class="card-body">
+                        <ul>
+                            <li><a href="scm.html">Suppy Chain Management</a></li>
+                            <li><a href="wms.html">Warehouse Management Systeme</a></li>
+                            <!-- Weitere Themen als <a> Elemente hier hinzufügen -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingSources">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSources"
+                            aria-expanded="false" aria-controls="collapseSources">
+                            Quellen
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseSources" class="collapse" aria-labelledby="headingSources">
+                    <div class="card-body">
+                        <ul>
+                            <li>Bild: Eigene Darstellung</li>
+                            <li><a href="https://de.wikipedia.org/wiki/Third_Party_Logistics">Quelle: Wikipedia</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Placeholder for Footer or Additional Information -->
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <p class="text-muted">
+                    <!-- Hier können zusätzliche Informationen oder ein Footer eingefügt werden -->
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warehouse Management Systeme</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- Bootstrap Resources -->
+    <script src="../bootstrap/jquery-3.5.1.slim.min.js"></script>
+    <script src="../bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/definition.js"></script>
+    <script src="scripts/firstRowNavbar.js"></script>
+    <link rel="stylesheet" href="styles/firstRowStyles.css">
+    <link rel="stylesheet" href="styles/definition.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Navbar Brand -->
+        <a class="navbar-brand" href="main.html" onclick="parentRedirect(event, 'main.html')">Log7 Glossar</a>
+
+        <!-- Toggler for Mobile View -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Content -->
+        <div class="collapse navbar-collapse" " id=" navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <!-- Search Bar -->
+                <input id="search" type="text" class="form-control mr-2" placeholder="Begriff Suchen">
+                <!-- Begriff Anlegen Button -->
+                <button onclick="redirectToGlossary()" class="btn btn-success mr-2">Suchen</button>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <!-- Article Title -->
+        <div class="row mb-2" id="introduction">
+            <!-- Image Column -->
+            <div class="col-md-8">
+                <h1 class="mb-3">Warehouse Management Systeme (WMS)</h1>
+                
+                <p>
+                    Warehouse Management Systeme (WMS) sind entscheidend für die Optimierung der Lagerverwaltung und
+                    -operationen. Sie ermöglichen es Unternehmen, den Empfang, die Lagerung, die Kommissionierung, die
+                    Verpackung und den Versand von Waren effizient zu verwalten. Durch die Automatisierung und
+                    Digitalisierung von Lagerprozessen helfen WMS, Fehler zu reduzieren, die Effizienz zu steigern und
+                    eine präzise Bestandskontrolle zu gewährleisten.
+                </p>
+            </div>
+            <!-- Introduction Text Column -->
+            <div class="col-md-4">
+                <img src="images/wsm.webp" alt="Warehouse Management Systeme" class="img-fluid">
+            </div>
+        </div>
+        <!-- Detailed Sections -->
+        <div id="accordion">
+            <!-- Section 1: Funktionen und Vorteile -->
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            Funktionen und Vorteile
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne">
+                    <div class="card-body">
+                        <p>
+                            Moderne W
+                            MS bieten fortschrittliche Funktionen wie Echtzeit-Bestandsverfolgung, Datenanalyse,
+                            Prognosewerkzeuge und Integration mit anderen Geschäftssystemen, was zu einer verbesserten
+                            Transparenz und Entscheidungsfindung führt. Ihre Anpassungsfähigkeit ermöglicht es, sie in
+                            verschiedenen Branchen einzusetzen, von E-Commerce bis hin zu Fertigung und Distribution.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 2: Herausforderungen und Lösungen -->
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                            aria-expanded="false" aria-controls="collapseTwo">
+                            Herausforderungen und Lösungen
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+                    <div class="card-body">
+                        <p>
+                            Trotz ihrer Vorteile stehen WMS vor Herausforderungen wie der Integration mit bestehenden
+                            Systemen, Skalierbarkeit und Anpassung an spezifische Geschäftsbedürfnisse. Lösungen
+                            beinhalten die Wahl flexibler, modulbasierter WMS, die Nutzung von Cloud-Technologien und
+                            die Anpassung der Systeme durch erfahrene Anbieter.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 3: Zukunft der WMS -->
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                            aria-expanded="false" aria-controls="collapseThree">
+                            Zukunft der WMS
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
+                    <div class="card-body">
+                        <p>
+                            Die Zukunft der WMS sieht vielversprechend aus, mit Entwicklungen in Bereichen wie
+                            künstlicher Intelligenz, maschinellem Lernen und Automatisierungstechnologien. Diese
+                            Fortschritte werden die
+                            Effizienz und Genauigkeit in der Lagerverwaltung weiter verbessern und eine nahtlose
+                            Integration in die gesamte Lieferkette ermöglichen.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+                            aria-expanded="false" aria-controls="collapseFour">
+                            Siehe auch: Verwandte Themen
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour">
+                    <div class="card-body">
+                        <ul>
+                            <li><a href="3pl.html">Drittanbieter-Logistik (3PL)</a></li>
+                            <li><a href="scm.html">Suppy Chain Management</a></li>
+                            <!-- Weitere Themen als <a> Elemente hier hinzufügen -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingSources">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSources"
+                            aria-expanded="false" aria-controls="collapseSources">
+                            Quellen
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseSources" class="collapse" aria-labelledby="headingSources">
+                    <div class="card-body">
+                        <ul>
+                            <li>Bild: Eigene Darstellung</li>
+                            <li><a href="https://www.sap.com/germany/products/scm/extended-warehouse-management/what-is-a-wms.html#:~:text=Fragen%20zur%20Lagerverwaltung-,Was%20ist%20ein%20WMS%20(Warehouse%2DManagement%2DSystem)%3F,die%20Bestandsverfolgung%20und%20alle%20Zwischenschritte.">Quelle: SAP</a></li>
+                            <!-- Weitere Quellen als <a> Elemente hier hinzufügen -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Placeholder for Last Modified Date -->
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <p id="lastModified" class="text-muted">
+                    <!-- Last modified date will be inserted here by JavaScript -->
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

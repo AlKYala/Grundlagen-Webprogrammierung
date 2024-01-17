@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossar</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <!--bootstrap-->
+    <script src="../bootstrap/jquery-3.5.1.slim.min.js"></script>
+    <script src="../bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+
+
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/firstRowNavbar.js"></script>
+    <script src="scripts/glossary.js"></script>
+    <link rel="stylesheet" href="styles/firstRowStyles.css">
+    <link rel="stylesheet" href="styles/alphabetRow.css">
+    <link rel="stylesheet" href="styles/glossary.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Navbar Brand -->
+        <a class="navbar-brand" href="main.html" onclick="parentRedirect(event, 'main.html')">Log7
+            Glossar</a>
+
+        <!-- Toggler for Mobile View -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Content -->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <!-- Search Bar -->
+                <input id="search" type="text" class="form-control mr-2" placeholder="Begriff Suchen">
+                <button onclick="redirectToGlossary()" class="btn btn-success mr-2">Suchen</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="alphabet-nav">
+        <a href="#A">A</a>
+        <a href="#B">B</a>
+        <a href="#C">C</a>
+        <a href="#D">D</a>
+        <a href="#E">E</a>
+        <a href="#F">F</a>
+        <a href="#G">G</a>
+        <a href="#H">H</a>
+        <a href="#I">I</a>
+        <a href="#J">J</a>
+        <a href="#K">K</a>
+        <a href="#L">L</a>
+        <a href="#M">M</a>
+        <a href="#N">N</a>
+        <a href="#O">O</a>
+        <a href="#P">P</a>
+        <a href="#Q">Q</a>
+        <a href="#R">R</a>
+        <a href="#S">S</a>
+        <a href="#T">T</a>
+        <a href="#U">U</a>
+        <a href="#V">V</a>
+        <a href="#W">W</a>
+        <a href="#X">X</a>
+        <a href="#Y">Y</a>
+        <a href="#Z">Z</a>
+    </div>
+    <!-- Your main.html content goes here -->
+
+
+    <!-- glossary-->
+    <div class="container mt-4">
+        <!-- Search Bar -->
+        <div class="row">
+            <div class="col-9">
+                <input type="text" id="searchInput" onkeyup="filterTerms()" placeholder="Suche nach Begriffen..."
+                    class="form-control">
+            </div>
+            <div class="col-3">
+                <button id="resetSearchButton" onclick="resetSearch()" class="btn btn-success mr-2">Alle Einträge
+                    Anzeigen</button>
+            </div>
+        </div>
+
+        <!-- Glossary Container -->
+        <div class="glossary-container">
+            <!-- Section for Letter A -->
+            <div class="letter-marker" id="A">A</div>
+            <div class="letter-marker" id="B">B</div>
+            <div class="letter-marker" id="C">C</div>
+            <div class="letter-marker" id="D">D</div>
+                <a href="3pl.html">
+                    <div class="term">Drittanbieter-Logistik (3PL)<span class="details">Logistik</span></div>
+                </a>
+            <div class="letter-marker" id="E">E</div>
+            <div class="letter-marker" id="F">F</div>
+            <div class="letter-marker" id="G">G</div>
+            <div class="letter-marker" id="H">H</div>
+            <div class="letter-marker" id="I">I</div>
+            <div class="letter-marker" id="J">J</div>
+            <div class="letter-marker" id="K">K</div>
+            <div class="letter-marker" id="L">L</div>
+            <div class="letter-marker" id="M">M</div>
+                <a href="marketing.html">
+                    <div class="term">Marketing<span class="details">Marketing</span></div>
+                </a>
+            <div class="letter-marker" id="M">N</div>
+            <div class="letter-marker" id="O">O</div>
+            <div class="letter-marker" id="P">P</div>
+            <div class="letter-marker" id="Q">Q</div>
+            <div class="letter-marker" id="R">R</div>
+            <div class="letter-marker" id="S">S</div>
+                <a href="seo.html">
+                    <div class="term">Search Engine Optimization<span class="details">IT und Marketing</span></div>
+                </a>
+                <a href="scm.html">
+                    <div class="term">Supply Chain Management <span class="details">Logistik</span></div>
+                </a>
+            <div class="letter-marker" id="T">T</div>
+            <div class="letter-marker" id="U">U</div>
+            <div class="letter-marker" id="V">V</div>
+            <div class="letter-marker" id="W">W</div>
+            
+                <a href="wms.html">
+                    <div class="term">Warehouse Management Systeme<span class="details">IT und Logistik</span></div>
+                </a>
+            <div class="letter-marker" id="X">X</div>
+            <div class="letter-marker" id="Y">Y</div>
+            <div class="letter-marker" id="Z">Z</div>
+        </div>
+    </div>
+</body>
+
+</html>

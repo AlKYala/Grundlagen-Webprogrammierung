@@ -1,0 +1,28 @@
+/* Landing Page Styles */
+.landing-title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.landing-box {
+    background: #ffffff; /* Bright white background for boxes */
+    border: 2px solid #1976d2; /* Blue border */
+    border-radius: 10px; /* Smooth border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    padding: 20px;
+    margin-bottom: 20px; /* Space between boxes */
+    transition: background-color 0.3s ease, transform 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
+}
+
+.landing-box:hover {
+    background-color: #e0f7fa; /* Light blue background on hover */
+    transform: scale(1.05); /* Slightly enlarge boxes on hover */
+    border-color: #90caf9; /* Lighter blue border on hover */
+    cursor: pointer;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 1.1em;
+}

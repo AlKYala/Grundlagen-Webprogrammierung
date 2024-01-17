@@ -1,0 +1,33 @@
+/* Definitions */
+
+.topic-title {
+    font-size: 1.75rem;
+    color: #333;
+}
+
+.topic-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+/* Custom styles for the table */
+.table {
+    margin-bottom: 2rem;
+}
+
+.card-header .btn {
+    width: 100%;
+    text-align: left;
+    font-size: 1.25rem;
+    color: #333;
+    text-decoration: none;
+}
+
+.card-header {
+    background-color: #f8f8f8;
+}
+
+.card-body {
+    background-color: #fff;
+}

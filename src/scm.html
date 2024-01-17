@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supply Chain Logistik</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- Bootstrap Resources -->
+    <script src="../bootstrap/jquery-3.5.1.slim.min.js"></script>
+    <script src="../bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+
+
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/definition.js"></script>
+    <script src="scripts/firstRowNavbar.js"></script>
+    <link rel="stylesheet" href="styles/firstRowStyles.css">
+    <link rel="stylesheet" href="styles/definition.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Navbar Brand -->
+        <a class="navbar-brand" href="main.html" onclick="parentRedirect(event, 'main.html')">Log7
+            Glossar</a>
+
+        <!-- Toggler for Mobile View -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Content -->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <!-- Search Bar -->
+                <input id="search" type="text" class="form-control mr-2" placeholder="Begriff Suchen">
+                <!-- Begriff Anlegen Button -->
+                <button onclick="redirectToGlossary()" class="btn btn-success mr-2">Suchen</button>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <!-- Article Title -->
+        <div class="row mb-2" id="introduction">
+            <!-- Image Column -->
+            <div class="col-md-8">
+                <h1 class="mb-3">Supply Chain Logistik</h1>
+                <h2>Einführung</h2>
+                <p>
+                    Versorgungskettenlogistik ist ein kritischer Bestandteil des modernen Handels, der die Planung,
+                    Implementierung und Kontrolle des effizienten, effektiven Vorwärts- und Rückwärtsflusses sowie die
+                    Lagerung von Waren, Dienstleistungen und damit verbundenen Informationen zwischen dem Ursprungsort
+                    und dem Verbrauchsort umfasst, um die Anforderungen der Kunden zu erfüllen. Es handelt sich um ein
+                    komplexes Netzwerk von Lieferanten, Herstellern, Lagerhäusern, Verteilzentren und Einzelhändlern,
+                    die zusammenarbeiten, um sicherzustellen, dass Produkte an die richtigen Orte, in den richtigen
+                    Mengen und zur richtigen Zeit produziert und geliefert werden.
+                </p>
+            </div>
+            <!-- Introduction Text Column -->
+            <div class="col-md-4">
+                <img src="http://via.placeholder.com/300x200" alt="Supply Chain Logistik" class="img-fluid">
+            </div>
+        </div>
+        <!-- Chapters - Collapsible Sections -->
+        <div id="accordion">
+            <!-- Chapter 1: The Role of Transportation -->
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            Kapitel 1: Die Rolle des Transports
+                        </button>
+                    </h2>
+                </div>
+                <div id="
+                " collapseOne" class="collapse" aria-labelledby="headingOne">
+                    <div class="card-body">
+                        Transport ist ein Schlüsselelement in der logistischen Kette. Er umfasst die Bewegung von
+                        Produkten von Lieferanten zu Herstellern, zu Verteilzentren und letztendlich zum Endkunden. Die
+                        Wahl des Transportmodus (Straße, Schiene, Luft oder Meer) beeinflusst die Effizienz der Abläufe
+                        in der Lieferkette, die Kosten und die Lieferleistung.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chapter 2: Warehousing and Storage -->
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                            aria-expanded="false" aria-controls="collapseTwo">
+                            Kapitel 2: Lagerung und Speicherung
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+                    <div class="card-body">
+                        Lagerhaltung spielt eine entscheidende Rolle bei der Regulierung des Warenflusses innerhalb
+                        einer Lieferkette und dient als Puffer, um Nachfrage und Angebot auszugleichen. Effektives
+                        Lagermanagement stellt sicher, dass Waren sicher und effizient gelagert werden und bei Bedarf
+                        für die Verteilung bereitstehen. Dies beinhaltet Bestandsmanagement, Kommissionierung,
+                        Verpackung und Versand von Waren.
+                    </div>
+                </div>
+            </div> <!-- Additional chapters... -->
+            <!-- Chapter 3: See Also: Related Topics -->
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                            aria-expanded="false" aria-controls="collapseThree">
+                            Siehe auch: Verwandte Themen
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
+                    <div class="card-body">
+                        <ul>
+                            <li><a href="3pl.html">Drittanbieter-Logistik (3PL)</a></li>
+                            <li><a href="wms.html">Warehouse Management Systeme</a></li>
+                            <!-- Weitere Themen als <a> Elemente hier hinzufügen -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Placeholder for Last Modified Date -->
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <p id="lastModified" class="text-muted">
+                    <!-- Last modified date will be inserted here by JavaScript -->
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

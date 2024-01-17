@@ -1,24 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Startseite</title>
+    <link rel="stylesheet" href="styles/styles.css">
     <!--bootstrap-->
-    <script src="../bootstrap/jquery-3.5.1.slim.min.js" ></script>
-    <script src="../bootstrap/bootstrap.min.js"></script>
+
+    <script src="../bootstrap/jquery-3.5.1.slim.min.js"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    
-    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+
+
     <!-- Latest compiled and minified JavaScript -->
-    
+    <script src="../bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/firstRowNavbar.js"></script>
+    <link rel="stylesheet" href="styles/firstRowStyles.css">
+    <link rel="stylesheet" href="styles/landing.css">
 </head>
+
 <body>
-    <!-- NAVBAR -->
-    <object type="text/html" data="components/navbar/firstRow/index.html" class="navbar-component"></object>
-    <!-- Your main.html content goes here -->
-    <!-- glossary-->
-    <object type="text/html" data="landing.html" class="main-component"></object>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Navbar Brand -->
+        <a class="navbar-brand" href="main.html" onclick="parentRedirect(event, 'main.html')">Log7
+            Glossar</a>
+
+        <!-- Toggler for Mobile View -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Content -->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <!-- Search Bar -->
+                <input id="search" type="text" class="form-control mr-2" placeholder="Begriff Suchen">
+                <!-- Begriff Anlegen Button -->
+                <button onclick="redirectToGlossary()"  class="btn btn-success mr-2">Suchen</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Landing Page Content -->
+    <div class="container mt-5">
+        <h1 class="landing-title">Log7 Consulting Glossar</h1>
+        <div class="row">
+            <!-- Box 1 -->
+            <div class="col-md-6">
+                <div class="landing-box" onclick="parentRedirect(event, 'glossaryMain.html')">
+                    <h2>Glossar Ansehen</h2>
+                    <h4 class="subtitle">Lorem ipsum</h4>
+                    <p>Sie können alle angelegten Begriffe hier einsehen</p>
+                </div>
+            </div>
+            <!-- Box 2 -->
+            <div class="col-md-6">
+                <div class="landing-box" onclick="parentRedirect(event, 'main.html')">
+                    <h2>Anleitung: Begriffe Anlegen</h2>
+                    <h4 class="subtitle">Lorem Ipsum</h4>
+                    <p>Hier finden Sie eine Anleitung, um Begriffe anzulegen.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
 </body>
+
 </html>

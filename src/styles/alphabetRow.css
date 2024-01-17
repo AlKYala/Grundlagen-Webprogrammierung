@@ -1,10 +1,6 @@
-body {
-    overflow: hidden;
+.alphabet-nav {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-}
-
-.alphabet-nav {
     display: flex;
     justify-content: center;
     background-color: #e0e0e0;

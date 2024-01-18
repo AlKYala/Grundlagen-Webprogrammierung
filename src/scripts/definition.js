@@ -1,4 +1,4 @@
-// Update the last modified date
+
 function updateLastModifiedDate() {
     var lastModified = document.lastModified;
     if(!lastModified) {
@@ -8,5 +8,5 @@ function updateLastModifiedDate() {
 }
 
 
-// Call the function when the page loads
+
 window.onload = updateLastModifiedDate;

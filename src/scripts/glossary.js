@@ -33,7 +33,6 @@ function resetSearch() {
 
 function init() {
     checkForSearchParam();
-    filterGlossary();
 }
 
 document.addEventListener("DOMContentLoaded", init);

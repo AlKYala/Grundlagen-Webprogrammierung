@@ -1,4 +1,3 @@
-
 function updateLastModifiedDate() {
     var lastModified = document.lastModified;
     if(!lastModified) {
@@ -6,7 +5,5 @@ function updateLastModifiedDate() {
     }
     document.getElementById("lastModified").innerText = "Definition zuletzt geaendert am: " + lastModified;
 }
-
-
 
 window.onload = updateLastModifiedDate;
